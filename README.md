@@ -1,8 +1,8 @@
 # App Name: Content Protector
 
-Purpose: To protect content from being flagged by platform algorithms by scrambling words that are not allowed.
+#### Purpose: To protect content from being flagged by platform algorithms by scrambling words that are not allowed.
 
-Target Users: Social media users, bloggers, and anyone who publishes content online.
+#### Target Users: Social media users, bloggers, and anyone who publishes content online.
 
 ## Features:
 
