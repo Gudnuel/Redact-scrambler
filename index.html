@@ -1,84 +1,103 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  <nav>
-    <h1><span>RE</span>Dact</h1>
-    <section class="link-holder">
-      <a href="/project">Project</a>
-      <a href="/document">Document</a>
-      <a href="/about">About</a>
-    </section>
-  </nav>
-  <section class="main-container">
-    <div class="action-container">
-      <form>
-        <!-- <label for="redact">search :</label> -->
-        <div class="first-container">
-          <div class="statePreview">
+  <body>
+    <nav>
+      <h1><span>RE</span>Dact</h1>
+      <section class="link-holder">
+        <a href="/project">Project</a>
+        <a href="/document">Document</a>
+        <a href="/about">About</a>
+      </section>
+    </nav>
+    <section class="main-container">
+      <div class="action-container">
+        <form>
+          <!-- <label for="redact">search :</label> -->
+          <div class="first-container">
+            <div class="statePreview">
+              <span class="state-input">
+                <label for="redact">words to verify:</label>
+                <textarea
+                  type="text"
+                  id="statementField"
+                  name="redact"
+                  placeholder="enter a statement, sentence or phrase"
+                ></textarea>
+              </span>
+              <span class="search-holder">
+                <label for="redact"> word:</label>
+                <input
+                  type="text"
+                  id="wordSearch"
+                  name="redacted"
+                  placeholder="search"
+                />
+              </span>
+              <span class="preview-holder">
+                <p>
+                  preview words to change in
+                  <span style="color: red">red</span>
+                </p>
+                <p class="preview">
+                  ...preview your input before
+                  <span style="color: red">replacing</span>
+                </p>
+              </span>
+            </div>
+          </div>
+          <div class="second-container">
+            <div class="btn-holder">
+              <span class="greenBanner"> success </span>
+              <button id="switch">back</button>
+            </div>
             <span class="state-input">
-              <label for="redact">words to verify:</label>
-              <textarea type="text" id="statementField" name="redact"
-                placeholder="enter a statement, sentence or phrase"></textarea>
-            </span>
-            <span class="search-holder">
-              <label for="redact"> word:</label>
-              <input type="text" id="wordSearch" name="redacted" placeholder="search" />
-            </span>
-            <span class="preview-holder">
-              <p>preview words to change in
-                <span style="color:red">red</span>
-              </p>
-              <p class="preview">...preview your input before <span style="color:red">replacing</span>
-              </p>
+              <label for="redact">Scramble Template:</label>
+              <textarea
+                type="text"
+                id="scrambleField"
+                name="redact"
+                placeholder="scramble word"
+              ></textarea>
+              <button type="button" id="copy">copy</button>
             </span>
           </div>
+          <div class="replace-holder">
+            <label for="redact"> word to replace:</label>
+            <input
+              type="text"
+              id="wordReplace"
+              name="redacted"
+              placeholder="enter replacement"
+            />
+            <button type="button" id="button">Redact Now</button>
+          </div>
+        </form>
+        <p class="message"></p>
+      </div>
+      <div class="stat-container">
+        <h3>Process Stats</h3>
+        <div class="stats-index">
+          <p class="listerOne"></p>
+          <p class="listerTwo"></p>
+          <p class="listerThree"></p>
+          <p class="listerFour"></p>
+          <p class="listerFive"></p>
         </div>
-        <div class="second-container">
-          <span class="btn-holder">
-            <span class="greenBanner">success </span>
-            <button id="switch">  back </button>
-          </span>
-          <span class="state-input">
-            <label for="redact">Scramble Template:</label>
-            <textarea type="text" id="scrambleField" name="redact" placeholder="scramble word"></textarea>
-            <button type="button" id="copy">copy</button>
-          </span>
-          </span>
-        </div>
-        <div class="replace-holder">
-          <label for="redact"> word to replace:</label>
-          <input type="text" id="wordReplace" name="redacted" placeholder="enter replacement" />
-          <button type="button" id="button">Redact Now</button>
-        </div>
-      </form>
-      <p class="message"></p>
-    </div>
-    <div class="stat-container">
-      <h3>Process Stats</h3>
-      <ul class="stats-index">
-        
-      </ul>
-
-    </div>
-  </section>
-  <footer>
-    <p>
-      &COPY; obadaki emmanuel 2023. All Rights Reserved. powered by devCareer and
-      TheAltSchool @ <span> Tutor </span>
-    </p>
-  </footer>
-  <script src="script.js"></script>
-
-
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-</body>
-
+      </div>
+    </section>
+    <footer>
+      <p>
+        &COPY; obadaki emmanuel 2023. All Rights Reserved. powered by devCareer
+        and TheAltSchool @ <span> Tutor </span>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
