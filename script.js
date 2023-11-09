@@ -10,7 +10,6 @@ let statement = document.getElementById("statementField");
 const preview = document.querySelector(".preview");
 const message = document.querySelector(".message");
 const bannerAlert = document.querySelector(".greenBanner");
-const statList = document.querySelector(".stats-index");
 const totalCharacter = document.querySelector(".listerOne");
 const totalMatch = document.querySelector(".listerTwo");
 const totalTime = document.querySelector(".listerThree");

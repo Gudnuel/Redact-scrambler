@@ -235,6 +235,18 @@ footer > p {
 }
 
 @media (max-width: 765px) {
+  body {
+    padding: 0 1rem;
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .action-container {
+    width: 100%;
+  }
+  .stat-container {
+    width: 100%;
+  }
   nav {
     justify-content: center;
     width: 100%;
@@ -248,7 +260,13 @@ footer > p {
   .link-holder {
     display: none;
   }
-
+  .replace-holder {
+    flex-direction: column;
+    height: 7rem;
+  }
+  .replace-holder > button {
+    margin-left: 0;
+  }
   footer > p {
     color: #fff;
     font-size: 0.6rem;
