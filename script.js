@@ -9,6 +9,7 @@ const changeWord = document.getElementById("wordReplace");
 let statement = document.getElementById("statementField");
 const preview = document.querySelector(".preview");
 const message = document.querySelector(".message");
+const statList = document.querySelector(".stats-index");
 const bannerAlert = document.querySelector(".greenBanner");
 const totalCharacter = document.querySelector(".listerOne");
 const totalMatch = document.querySelector(".listerTwo");
@@ -63,7 +64,6 @@ button.addEventListener("click", function (e) {
     const isMatch = sentence.match(pattern);
     if (isMatch) {
       let rewrite = sentence.replace(pattern, `${subWord}`);
-      console.log(rewrite);
       scrabber.value = rewrite;
       firstDiv.style.display = "none";
       secondDiv.style.display = "flex";
